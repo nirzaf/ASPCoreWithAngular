@@ -17,5 +17,7 @@ namespace ASPWithAngular.Data
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
         }
+
+        public DbSet<PaymentDetail> PaymentDetails { get; set; }
     }
 }
